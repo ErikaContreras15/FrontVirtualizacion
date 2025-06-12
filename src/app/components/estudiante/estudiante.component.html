@@ -1,0 +1,13 @@
+<section id="registrar">
+<h2>Registrar Estudiante</h2>
+<form (ngSubmit)="registrar()">
+  <input placeholder="Cédula" [(ngModel)]="estudiante.cedula" name="cedula" required>
+  <input placeholder="Nombre" [(ngModel)]="estudiante.nombre" name="nombre" required>
+  <input placeholder="Apellido" [(ngModel)]="estudiante.apellido" name="apellido" required>
+  <input placeholder="Celular" [(ngModel)]="estudiante.celular" name="celular" required>
+  <input placeholder="Correo" [(ngModel)]="estudiante.correo" name="correo" required>
+  <input placeholder="Dirección" [(ngModel)]="estudiante.direccion" name="direccion" required>
+  <input placeholder="Contraseña" [(ngModel)]="estudiante.contrasena" name="contrasena" required type="password">
+  <button type="submit">Registrarse</button>
+</form>
+</section>

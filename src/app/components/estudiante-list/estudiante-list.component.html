@@ -1,0 +1,20 @@
+<section id="estudiantes-listar">
+<h2>Tabla</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Cédula</th><th>Nombre</th><th>Apellido</th><th>Celular</th>
+      <th>Correo</th><th>Dirección</th><th>Acción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let est of estudiantes">
+      <td>{{ est.cedula }}</td><td>{{ est.nombre }}</td><td>{{ est.apellido }}</td>
+      <td>{{ est.celular }}</td><td>{{ est.correo }}</td><td>{{ est.direccion }}</td>
+      <td>
+        <button (click)="eliminar(est.cedula)">Borrar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</section>
