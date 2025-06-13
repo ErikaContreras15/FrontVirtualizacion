@@ -9,7 +9,8 @@ import { Estudiante } from '../module/estudiante';
 export class EstudianteService {
 
   //private apiUrl = 'http://34.41.48.181:8080/api/estudiantes';
-private apiUrl = 'http://localhost:8080/virtualizacion_Back/rs/estudiantes';
+//private apiUrl = 'http://localhost:8080/virtualizacion_Back/rs/estudiantes';
+  private apiUrl = 'http://10.128.0.3:8080/virtualizacion_Back/rs/estudiantes';
   constructor(private http: HttpClient ) {}
 
   listar(): Observable<any[]> {
